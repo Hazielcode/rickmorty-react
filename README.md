@@ -2,276 +2,335 @@
 
 <div align="center">
 
-
-**Explora el multiverso de Rick & Morty con esta aplicación web interactiva**
+**Aplicación web moderna para explorar el multiverso de Rick & Morty**
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Vite](https://img.shields.io/badge/Vite-Latest-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Netlify](https://img.shields.io/badge/Netlify-Deployed-00C7B7?logo=netlify&logoColor=white)](https://inquisitive-strudel-09475b.netlify.app)
 
-[Demo en vivo](https://rickmorty-react.vercel.app) · [Reportar Bug](https://github.com/Hazielcode/rickmorty-react/issues) · [Solicitar Feature](https://github.com/Hazielcode/rickmorty-react/issues)
+[Demo en Vivo](https://inquisitive-strudel-09475b.netlify.app) • [Video Demo](https://youtu.be/MS2dLyQ6tQs) • [Reportar Issue](https://github.com/Hazielcode/rickmorty-react/issues)
 
 </div>
 
 ---
 
-## 📋 Descripción
+## 📖 Descripción
 
-Aplicación web moderna desarrollada con **React**, **Vite** y **TypeScript** que consume la [API pública de Rick and Morty](https://rickandmortyapi.com/api). Permite explorar personajes del universo interdimensional con navegación fluida, listado dinámico y paginación avanzada.
-
-### ✨ Características principales
-
-- 🎯 **Interfaz intuitiva** con diseño responsive
-- 🚀 **Carga rápida** gracias a Vite
-- 📱 **Mobile-first** adaptable a cualquier dispositivo
-- 🔍 **Navegación fluida** entre páginas sin recargas
-- 📊 **Paginación dinámica** para explorar todos los personajes
-- 🎨 **UI moderna** con Bootstrap 5
+Aplicación web desarrollada con **React + Vite + TypeScript** que consume la [API pública de Rick and Morty](https://rickandmortyapi.com/api) para explorar personajes del universo interdimensional. Proyecto académico que implementa buenas prácticas de desarrollo frontend moderno con arquitectura escalable y tipado estático.
 
 ---
 
-## 🛠️ Stack Tecnológico
-
-| Tecnología | Versión | Propósito |
-|------------|---------|-----------|
-| **React** | 18 | Biblioteca UI |
-| **TypeScript** | 5.0 | Tipado estático |
-| **Vite** | 7 | Build tool ultrarrápido |
-| **React Router DOM** | 6 | Enrutamiento SPA |
-| **Bootstrap** | 5 | Framework CSS |
-| **Fetch API** | Nativa | Consumo de API REST |
-| **Custom Hooks** | `useFetch` | Lógica reutilizable |
-
----
-
-## 🎯 Funcionalidades Implementadas
+## ✨ Características Principales
 
 <table>
 <thead>
 <tr>
-<th>Feature</th>
+<th width="25%">Feature</th>
 <th>Descripción</th>
-<th>Estado</th>
-<th>Puntos</th>
+<th width="15%">Estado</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>🛠️ Setup</td>
-<td>Configuración del proyecto con arquitectura limpia</td>
-<td>✅</td>
-<td>2</td>
+<td><strong>🛠️ Setup Modular</strong></td>
+<td>Proyecto Vite con arquitectura limpia (components, pages, hooks, services)</td>
+<td align="center">✅</td>
 </tr>
 <tr>
-<td>🌐 API REST</td>
-<td>Integración completa con Rick & Morty API</td>
-<td>✅</td>
-<td>2</td>
+<td><strong>🌐 API REST</strong></td>
+<td>Integración completa con Rick & Morty API mediante custom hook <code>useFetch</code></td>
+<td align="center">✅</td>
 </tr>
 <tr>
-<td>🏠 Home</td>
-<td>Landing page con hero y preview de personajes</td>
-<td>✅</td>
-<td>2</td>
+<td><strong>🏠 Home Page</strong></td>
+<td>Landing con hero section, descripción del proyecto y personajes destacados</td>
+<td align="center">✅</td>
 </tr>
 <tr>
-<td>📜 Entities</td>
-<td>Listado completo con 3+ propiedades y paginación</td>
-<td>✅</td>
-<td>3</td>
+<td><strong>📜 Entities Page</strong></td>
+<td>Listado paginado completo con nombre, especie y género de cada personaje</td>
+<td align="center">✅</td>
 </tr>
 <tr>
-<td>🔗 Routing</td>
-<td>Navegación SPA con React Router DOM</td>
-<td>✅</td>
-<td>2</td>
+<td><strong>🔗 SPA Routing</strong></td>
+<td>Navegación fluida sin recargas mediante React Router DOM</td>
+<td align="center">✅</td>
 </tr>
 <tr>
-<td>🎨 Estilos</td>
-<td>Diseño responsive con Bootstrap 5</td>
-<td>✅</td>
-<td>1</td>
+<td><strong>🎨 UI Responsive</strong></td>
+<td>Diseño adaptable con Bootstrap 5 para todos los dispositivos</td>
+<td align="center">✅</td>
 </tr>
 <tr>
-<td colspan="3"><strong>TOTAL</strong></td>
-<td><strong>12/12</strong></td>
+<td><strong>☁️ CI/CD</strong></td>
+<td>Deploy automatizado en Netlify con configuración SPA optimizada</td>
+<td align="center">✅</td>
 </tr>
 </tbody>
 </table>
 
 ---
 
-## 📂 Estructura del Proyecto
+## 🛠️ Stack Tecnológico
+
+```
+Frontend Framework    → React 18
+Build Tool           → Vite
+Language             → TypeScript
+Routing              → React Router DOM v6
+Styling              → Bootstrap 5
+HTTP Client          → Fetch API + Custom Hook
+API Source           → Rick and Morty API (REST)
+Deployment           → Netlify
+Version Control      → Git + GitHub
+```
+
+---
+
+## 📂 Arquitectura del Proyecto
 
 ```
 rickmorty-react/
 │
 ├── src/
-│   ├── components/         # Componentes reutilizables
-│   │   ├── NavBar.tsx      # Barra de navegación
-│   │   ├── Hero.tsx        # Sección hero
-│   │   └── Card.tsx        # Tarjeta de personaje
+│   ├── components/          # Componentes reutilizables
+│   │   ├── Card.tsx         # Tarjeta de personaje
+│   │   └── Hero.tsx         # Sección hero principal
 │   │
-│   ├── hooks/              # Custom hooks
-│   │   └── useFetch.ts     # Hook para peticiones HTTP
+│   ├── hooks/               # Custom React Hooks
+│   │   └── useFetch.ts      # Hook para peticiones HTTP
 │   │
-│   ├── pages/              # Vistas principales
-│   │   ├── Home.tsx        # Página de inicio
-│   │   └── Entities.tsx    # Listado completo
+│   ├── pages/               # Páginas/Rutas principales
+│   │   ├── Home.tsx         # Página de inicio (/)
+│   │   └── Entities.tsx     # Listado completo (/entities)
 │   │
-│   ├── services/           # Servicios externos
-│   │   └── api.ts          # Configuración API
+│   ├── services/            # Lógica de negocio
+│   │   └── api.ts           # Configuración y endpoints API
 │   │
-│   ├── App.tsx             # Componente raíz
-│   ├── main.tsx            # Punto de entrada
-│   └── index.css           # Estilos globales
+│   ├── App.tsx              # Componente raíz con routing
+│   ├── main.tsx             # Entry point de la aplicación
+│   └── index.css            # Estilos globales
 │
-├── public/                 # Recursos estáticos
+├── public/                  # Assets estáticos
+├── _redirects               # Configuración Netlify SPA
 ├── package.json
 ├── tsconfig.json
-└── vite.config.ts
+├── vite.config.ts
+└── README.md
 ```
 
 ---
 
 ## 🚀 Instalación y Ejecución
 
-### Requisitos previos
+### Requisitos Previos
 
-- Node.js ≥ 18.x
-- npm ≥ 9.x o yarn ≥ 1.22
+- **Node.js** ≥ 18.x
+- **npm** ≥ 9.x (o yarn/pnpm)
 
-### 1. Clonar el repositorio
+### Pasos de Instalación
 
 ```bash
+# 1. Clonar el repositorio
 git clone https://github.com/Hazielcode/rickmorty-react.git
 cd rickmorty-react
-```
 
-### 2. Instalar dependencias
-
-```bash
+# 2. Instalar dependencias
 npm install
-# o con yarn
-yarn install
-```
 
-### 3. Ejecutar en desarrollo
-
-```bash
+# 3. Ejecutar servidor de desarrollo
 npm run dev
-# o con yarn
-yarn dev
 ```
 
 La aplicación estará disponible en: **http://localhost:5173**
 
-### 4. Build de producción
+### Comandos Disponibles
 
 ```bash
-npm run build
-npm run preview
+npm run dev        # Inicia el servidor de desarrollo
+npm run build      # Genera build de producción en /dist
+npm run preview    # Preview del build de producción
+npm run lint       # Ejecuta ESLint
 ```
-
-Los archivos optimizados se generarán en `/dist`.
 
 ---
 
-## 🌐 Deploy
+## 🌐 Deploy en Producción
 
-### Opción 1: Vercel (Recomendado)
+### 🔗 Sitio en Vivo
 
-1. Instala Vercel CLI:
-   ```bash
-   npm i -g vercel
-   ```
+**URL de Producción:** [https://inquisitive-strudel-09475b.netlify.app](https://inquisitive-strudel-09475b.netlify.app)
 
-2. Despliega con un comando:
-   ```bash
-   vercel
-   ```
+### Configuración de Deploy
 
-### Opción 2: Vercel (GitHub Integration)
+El proyecto está configurado para **Netlify** con soporte completo para SPA routing mediante el archivo `_redirects`:
 
-1. Ve a [vercel.com/new](https://vercel.com/new)
-2. Conecta tu repositorio de GitHub
-3. Configura:
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-4. ¡Deploy automático con cada push!
+```
+/*    /index.html   200
+```
 
-### Opción 3: Netlify
+### Deploy Manual en Netlify
 
 ```bash
+# 1. Instalar Netlify CLI
 npm install -g netlify-cli
-netlify deploy --prod
+
+# 2. Hacer build
+npm run build
+
+# 3. Deploy
+netlify deploy --prod --dir=dist
+```
+
+### Deploy Automático (Recomendado)
+
+1. Conecta tu repositorio a Netlify
+2. Configura build settings:
+   - **Build command:** `npm run build`
+   - **Publish directory:** `dist`
+3. Cada push a `main` despliega automáticamente
+
+---
+
+## 🎥 Demostración en Video
+
+**🎬 Ver en YouTube:** **[Rick & Morty Universe - Demo Completa](https://youtu.be/MS2dLyQ6tQs)**
+
+### Contenido del Video
+
+1. ✅ Navegación entre rutas (`/` y `/entities`)
+2. ✅ Funcionalidad de paginación
+3. ✅ Consumo de API en tiempo real
+4. ✅ Walkthrough del código fuente
+5. ✅ Estructura de componentes
+6. ✅ Repositorio en GitHub
+7. ✅ Deploy en Netlify
+
+---
+
+## 📊 Funcionalidades Detalladas
+
+### Ruta `/` (Home)
+
+- Hero section con título y descripción del proyecto
+- Grid de personajes destacados (primeros 8)
+- Cards con imagen, nombre y especie
+- Botón de navegación a listado completo
+
+### Ruta `/entities` (Listado)
+
+- Grid completo de todos los personajes
+- Paginación funcional (20 personajes por página)
+- Muestra 3 propiedades principales:
+  - **Nombre** del personaje
+  - **Especie** (Human, Alien, etc.)
+  - **Género** (Male, Female, Unknown)
+- Navegación fluida entre páginas
+- Manejo de estados de carga y errores
+
+### Custom Hook `useFetch`
+
+```typescript
+// Características del hook
+- Tipado genérico con TypeScript
+- Manejo de estados: loading, data, error
+- Reutilizable en cualquier componente
+- Efecto secundario con cleanup
 ```
 
 ---
 
-## 🎥 Video Demostración
+## 🔧 Tecnologías y Dependencias
 
-📹 **[Ver demo en YouTube](https://youtube.com/tu-video)**
+### Dependencies
 
-**Contenido del video:**
-- ✅ Navegación entre rutas `/` y `/entities`
-- ✅ Funcionalidad de paginación
-- ✅ Tour por el código fuente
-- ✅ Commits en GitHub
-- ✅ Deploy en producción
+```json
+{
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1",
+  "react-router-dom": "^6.x.x",
+  "bootstrap": "^5.3.x"
+}
+```
+
+### DevDependencies
+
+```json
+{
+  "@vitejs/plugin-react": "^4.x.x",
+  "typescript": "^5.x.x",
+  "vite": "^7.x.x",
+  "@types/react": "^18.x.x",
+  "@types/react-dom": "^18.x.x"
+}
+```
 
 ---
 
+## 🎯 Criterios de Evaluación Cumplidos
 
+| Criterio | Puntaje | Estado |
+|----------|---------|--------|
+| Configuración inicial del proyecto | 2 pts | ✅ |
+| Consumo de API pública | 2 pts | ✅ |
+| Implementación ruta "/" | 2 pts | ✅ |
+| Implementación ruta "/entities" | 3 pts | ✅ |
+| Navegación con React Router | 2 pts | ✅ |
+| Aplicación de framework de estilos | 1 pt | ✅ |
+| **TOTAL** | **12/12** | **✅** |
 
-## 🤝 Contribuir
+---
 
-Las contribuciones son bienvenidas. Para cambios importantes:
+## 🤝 Contribuciones
+
+Este es un proyecto académico, pero las sugerencias son bienvenidas:
 
 1. Fork el proyecto
-2. Crea tu rama: `git checkout -b feature/AmazingFeature`
-3. Commit tus cambios: `git commit -m 'Add: nueva funcionalidad'`
-4. Push a la rama: `git push origin feature/AmazingFeature`
+2. Crea tu rama: `git checkout -b feature/mejora`
+3. Commit: `git commit -m 'Add: nueva funcionalidad'`
+4. Push: `git push origin feature/mejora`
 5. Abre un Pull Request
 
 ---
 
-## 📝 Roadmap
+## 📝 Roadmap Futuro
 
-- [ ] Búsqueda de personajes por nombre
-- [ ] Filtros por especie y estado
-- [ ] Vista detalle de personaje
+- [ ] Implementar búsqueda de personajes por nombre
+- [ ] Añadir filtros por especie, estado y género
+- [ ] Vista detalle individual de cada personaje
+- [ ] Sistema de favoritos con localStorage
 - [ ] Modo oscuro/claro
-- [ ] PWA con soporte offline
 - [ ] Testing con Vitest + React Testing Library
+- [ ] PWA con soporte offline
+- [ ] Animaciones con Framer Motion
 
 ---
 
 ## 👨‍💻 Autor
 
-**Samir Haziel Alfonso Solorzano**
+**Samir Haziel Alfonso Solórzano**
 
-Desarrollador Full Stack en formación | TECSUP
-
-- 🌍 Lima, Perú
+- 🎓 Estudiante de Desarrollo de Software - TECSUP
+- 📧 Email: samir.haziel@tecsup.edu.pe
 - 💼 GitHub: [@Hazielcode](https://github.com/Hazielcode)
-- 📧 Email: [samir.alfonso@tecsup.edu.pe](mailto:samir.alfonso@tecsup.edu.pe)
-- 🔗 LinkedIn: [haziel](https://linkedin.com/haziel1215)
+- 🌍 Lima, Perú
+- 📅 Proyecto Académico 2025-2
 
 ---
 
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto es de uso académico bajo Licencia MIT. Ver archivo [LICENSE](LICENSE) para más detalles.
 
 ---
 
 ## 🙏 Agradecimientos
 
-- [Rick and Morty API](https://rickandmortyapi.com/) por la API gratuita
-- [TECSUP](https://www.tecsup.edu.pe/) por la formación académica
-- Comunidad de React y Vite por las herramientas
+- **Rick and Morty API** por proporcionar una API REST gratuita y bien documentada
+- **TECSUP** por la formación académica de calidad
+- **Comunidad React** por las herramientas y recursos educativos
+- **Vite Team** por el tooling ultrarrápido de desarrollo
 
 ---
 
@@ -279,6 +338,8 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 **⭐ Si este proyecto te fue útil, considera darle una estrella en GitHub ⭐**
 
-Hecho con 💚 y ☕ en Lima, Perú
+---
+
+Desarrollado con 💚 y ☕ en Lima, Perú | **TECSUP 2025**
 
 </div>
