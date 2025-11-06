@@ -33,7 +33,7 @@ export default function Entities() {
       </div>
 
       {loading && <p>Cargando...</p>}
-      {error && <div className="alert alert-danger">{String((error as Error).message)}</div>}
+      {error && <div className="alert alert-danger">{error.message}</div>}
 
       <div className="row g-3">
         {list.map((c: any) => (

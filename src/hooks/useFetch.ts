@@ -3,15 +3,22 @@ import { useEffect, useState } from "react";
 export function useFetch<T>(asyncFn: () => Promise<T>, deps: unknown[] = []) {
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<unknown>(null);
+  const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
     let active = true;
     setLoading(true);
     asyncFn()
-      .then((d) => active && setData(d))
-      .catch((e) => active && setError(e))
-      .finally(() => active && setLoading(false));
+      .then((d) => {
+        if (active) setData(d);
+      })
+      .catch((e) => {
+        if (active) setError(e instanceof Error ? e : new Error(String(e)));
+      })
+      .finally(() => {
+        if (active) setLoading(false);
+      });
+
     return () => {
       active = false;
     };
